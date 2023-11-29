@@ -42,7 +42,7 @@ li a .right {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: rgba(255, 127, 80, 0.203);
 }
 
 li.dropdown {
@@ -70,3 +70,31 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.search-container {
+    float: center;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    float:center;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+* {box-sizing: border-box;}

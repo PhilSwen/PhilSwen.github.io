@@ -25,20 +25,39 @@ body {
 .header p {
     font-size: 25px;
 }
+.navbar {
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: lightcoral;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a.right {
+    float: right;
+}
+.navbar a:hover {
+    background-color: brown;
+    color: black;
+}
 </style>
 <body>
 <div class = "header">
     <h1>Dashboard</h1>
 </div>
-<a href="http://127.0.0.1:5500/fundraiser_creation.html">Fundraiser Creation Link</a>
-<br>
-<a href="http://127.0.0.1:5500/fundraiser.html">Recommended Fundraiser</a>
-<br>
-<a href="http://127.0.0.1:5500/private_group.html">Private Group Link</a>
-<p>brief list</p>
-<a href="http://127.0.0.1:5500/subscriptions.html">Subscription Link</a>
-<p>brief list</p>
-<a href="http://127.0.0.1:5500/profile.html">Profile</a>
+<div class = "navbar">
+    <a href="http://127.0.0.1:5500/fundraiser_creation.html">Fundraiser Creation Link</a>
+    <a href="http://127.0.0.1:5500/fundraiser.html">Recommended Fundraiser</a>
+    <a href="http://127.0.0.1:5500/private_group.html">Private Group Link</a>
+    <p>brief list</p>
+    <a href="http://127.0.0.1:5500/subscriptions.html">Subscription Link</a>
+    <p>brief list</p>
+    <a href="http://127.0.0.1:5500/profile.html" class = "right">Profile</a>
+</div>
 
 </body>
 </html>

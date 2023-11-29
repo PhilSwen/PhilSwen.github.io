@@ -25,36 +25,56 @@ body {
 .header p {
     font-size: 25px;
 }
-.navbar {
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    background-color: antiquewhite;
+    background-color: #333;
 }
-.navbar a {
+
+li {
     float: left;
-    display: block;
-    color: lightcoral;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
     text-align: center;
-    padding: 12px 14px;
+    padding: 14px 12px;
     text-decoration: none;
 }
-.navbar a.right {
+li a .right {
     float: right;
 }
-.navbar a:hover {
-    background-color: brown;
-    color: black;
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
 }
-.dropdown {
+
+li.dropdown {
     display: inline-block;
-    position: relative;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 100%;
-    overflow: auto;
+    background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -63,25 +83,32 @@ body {
 <div class = "header">
     <h1>Dashboard</h1>
 </div>
-<div class = "navbar">
-    <a href="http://127.0.0.1:5500/fundraiser_creation.html">Fundraiser Creation Link</a>
-    <a href="http://127.0.0.1:5500/fundraiser.html">Recommended Fundraiser</a>
-    <div class="dropdown">
-        <a>Private Group Link</a>
-        <div class = "dropdown-content"> 
-            <a href="http://127.0.0.1:5500/private_group.html">Private Group Link</a>
-            <a href="http://127.0.0.1:5500/private_group.html">Private Group Link</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <a href="http://127.0.0.1:5500/subscriptions.html">Subscription Link</a>
-        <select name = "pglink" id = "link"> 
-            <option value = "link3">link3</option>
-            <option value = "link4">link4</option>
-        </select>
-    </div>
-    <a href="http://127.0.0.1:5500/profile.html" class = "right">Profile</a>
-</div>
-
+<ul>
+    <li>
+        <a href="http://127.0.0.1:5500/fundraiser_creation.html">Fundraiser Creation Link</a>
+        <a href="http://127.0.0.1:5500/fundraiser.html">Recommended Fundraiser</a>
+        <li class="dropdown">
+            <a class = "dropbtn">Private Group Link</a>
+            <div class = "dropdown-content"> 
+                <a href="http://127.0.0.1:5500/private_group.html">Private Group 1</a>
+                <a href="http://127.0.0.1:5500/private_group.html">Private Group 2</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a class = "dropbtn">Subscription Link</a>
+            <div class = "dropdown-content"> 
+                <a href="http://127.0.0.1:5500/subscriptions.html">Subscription 1</a>
+                <a href="http://127.0.0.1:5500/subscriptions.html">Subscription 2</a>
+            </div>
+        </li>
+        <li class="dropdown" style="float:right">
+            <a href="http://127.0.0.1:5500/profile.html" class = "dropbtn">Profile</a>
+            <div class = "dropdown-content" style="right:0"> 
+                <a href="http://127.0.0.1:5500/profile.html">Placeholder</a>
+                <a href="http://127.0.0.1:5500/profile.html">Settings</a>
+            </div>
+        </li>
+    </li>
+</ul>
 </body>
 </html>

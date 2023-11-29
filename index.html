@@ -44,6 +44,20 @@ body {
     background-color: brown;
     color: black;
 }
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 </style>
 <body>
 <div class = "header">
@@ -52,10 +66,20 @@ body {
 <div class = "navbar">
     <a href="http://127.0.0.1:5500/fundraiser_creation.html">Fundraiser Creation Link</a>
     <a href="http://127.0.0.1:5500/fundraiser.html">Recommended Fundraiser</a>
-    <a href="http://127.0.0.1:5500/private_group.html">Private Group Link</a>
-    <p>brief list</p>
-    <a href="http://127.0.0.1:5500/subscriptions.html">Subscription Link</a>
-    <p>brief list</p>
+    <div class="dropdown">
+        <a>Private Group Link</a>
+        <div class = "dropdown-content"> 
+            <a href="http://127.0.0.1:5500/private_group.html">Private Group Link</a>
+            <a href="http://127.0.0.1:5500/private_group.html">Private Group Link</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="http://127.0.0.1:5500/subscriptions.html">Subscription Link</a>
+        <select name = "pglink" id = "link"> 
+            <option value = "link3">link3</option>
+            <option value = "link4">link4</option>
+        </select>
+    </div>
     <a href="http://127.0.0.1:5500/profile.html" class = "right">Profile</a>
 </div>
 

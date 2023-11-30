@@ -88,7 +88,7 @@ li.dropdown {
 
 .search-container {
     text-align: center;
-    background-color:bisque
+    background-color:bisque;
 }
 
 .search-container input[type=text] {
@@ -97,21 +97,18 @@ li.dropdown {
     margin-bottom: 8px;
     font-size: 17px;
     border: none;
+    display: inline;
 }
 
 .search-container button {
-    padding: 6px;
-    padding-bottom: 0%;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    padding: 6px 8px;
     background: #ddd;
     font-size: 17px;
     border: none;
     cursor: pointer;
+    display: inline;
 }
 
 .search-container button:hover {
     background: #ccc;
 }
-
-* {box-sizing: border-box;}

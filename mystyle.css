@@ -4,18 +4,33 @@ body {
 }
 
 .header {
-    padding: 80px;
+    padding: 10px;
     text-align: center;
     background: rgb(231, 203, 80);
     color: rgb(73, 141, 143);
 }
 
-.header h1 {
-    font-size: 40px;
+.header a {
+    float:left;
 }
 
-.header p {
-    font-size: 25px;
+.header h1 {
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    display:inline;
+}
+
+.header a.logo img {
+    height: 50px;
+    width: 70px;
+    margin-right: -80px;
+    display: inline;
+    padding: 0px;
+}
+
+.header a .right{
+    float: right;
 }
 
 ul {
@@ -72,21 +87,21 @@ li.dropdown {
 }
 
 .search-container {
-    float: center;
+    text-align: center;
+    background-color:bisque
 }
 
 .search-container input[type=text] {
     padding: 6px;
     margin-top: 8px;
+    margin-bottom: 8px;
     font-size: 17px;
     border: none;
 }
 
 .search-container button {
-    float:center;
     padding: 6px;
     margin-top: 8px;
-    margin-right: 16px;
     background: #ddd;
     font-size: 17px;
     border: none;

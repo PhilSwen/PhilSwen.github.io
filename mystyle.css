@@ -23,8 +23,8 @@ body {
 
 .header a.logo img {
     height: 50px;
-    width: 70px;
-    margin-right: -80px;
+    width: auto;
+    margin-right: -50px;
     display: inline;
     padding: 0px;
 }

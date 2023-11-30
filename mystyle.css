@@ -101,7 +101,9 @@ li.dropdown {
 
 .search-container button {
     padding: 6px;
+    padding-bottom: 0%;
     margin-top: 8px;
+    margin-bottom: 8px;
     background: #ddd;
     font-size: 17px;
     border: none;

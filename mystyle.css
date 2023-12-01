@@ -125,6 +125,7 @@ li.dropdown {
     flex: 30%;
     background-color: #f1f1f1;
     padding: 20px;
+    min-height:700px
   }
 
   
@@ -133,6 +134,7 @@ li.dropdown {
     flex: 40%;
     background-color: white;
     padding: 20px;
+    min-height: 700px;
   }
   
   /* Fake image, just for this example */

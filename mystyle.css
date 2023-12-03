@@ -145,3 +145,31 @@ li.dropdown {
   * {
     box-sizing: border-box;
   }
+
+.footer {
+    position: static;
+    background: rgb(231, 203, 80);
+    color: rgb(73, 141, 143);
+}
+
+#contact {
+    position: relative;
+    left: 290px;
+    font-size: 25px;
+}
+
+.side-footer {
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+    font-size: 22px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about {
+    margin-top: 50px;
+}
